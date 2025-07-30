@@ -1,0 +1,19 @@
+{
+  "2025-07-30T18-42-38+00-00_mmlu_ZYEnfbu3nstBuwzjiAGzuG.eval": {
+    "eval_id": "4BDAxLL9NuXrrTvX5UqUHE",
+    "run_id": "HzNv2S2GejyDNXU5GS3KbX",
+    "task": "mmlu",
+    "task_id": "ZYEnfbu3nstBuwzjiAGzuG",
+    "task_version": 0,
+    "version": 2,
+    "status": "success",
+    "model": "openai/gpt-4",
+    "started_at": "2025-07-30T18:42:38+00:00",
+    "completed_at": "2025-07-30T18:43:21+00:00",
+    "primary_metric": {
+      "name": "accuracy",
+      "value": 0.7824561403508772,
+      "params": {}
+    }
+  }
+}

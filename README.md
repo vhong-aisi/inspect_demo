@@ -8,6 +8,12 @@ Demo repository for Inspect AI presentation in Vegas 2025
 uv sync
 ```
 
+Then activate the virtual environment. Otherwise, you'll need to prepend `uv run` to the commands below:
+
+```
+source .venv/bin/activate
+```
+
 # Commands
 
 Run MMLU eval:
@@ -29,4 +35,10 @@ View logs:
 
 ```
 inspect view --log-dir assets/
+```
+
+Run example analysis notebook:
+
+```
+jupyter notebook
 ```

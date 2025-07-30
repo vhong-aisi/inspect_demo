@@ -8,5 +8,7 @@ dependencies = [
     "datasets>=4.0.0",
     "inspect-ai>=0.3.116",
     "ipykernel>=6.30.0",
+    "matplotlib>=3.10.3",
     "openai>=1.98.0",
+    "seaborn>=0.13.2",
 ]

@@ -47,16 +47,24 @@ inspect eval-set single_turn/mmlu.py --model openai/gpt-4 \
 --epochs 5
 ```
 
+## Run bomb evals
+
+We use the python eval call, so simply run the script.
+
+```
+python single_turn/bomb.py
+```
+
 ## View logs
 
 ```
 inspect view --log-dir assets/
 ```
 
-## View example notebook for MMLU
+## View example notebooks
 
 ```
 jupyter notebook
 ```
 
-Then connect to http://localhost:8888 and open to `single_turn/analysis.ipynb`.
+Then connect to http://localhost:8888 and open the `.ipynb` files

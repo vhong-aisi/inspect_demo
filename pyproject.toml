@@ -13,3 +13,9 @@ dependencies = [
     "openai>=1.98.0",
     "seaborn>=0.13.2",
 ]
+
+[dependency-groups]
+deep-research = [
+    "anthropic>=0.60.0",
+    "fire>=0.7.0",
+]

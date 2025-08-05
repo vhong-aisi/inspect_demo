@@ -7,7 +7,7 @@ Demo repository for Inspect AI presentation in Vegas 2025
 ### Install dependencies
 
 ```
-uv sync --locked
+uv sync --locked --all-groups
 ```
 
 ### Activate venv

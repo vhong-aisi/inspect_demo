@@ -1,4 +1,4 @@
-from inspect_ai import Task, task
+from inspect_ai import Task, task, eval
 from inspect_ai.dataset import FieldSpec, csv_dataset
 from inspect_ai.solver import generate
 from inspect_ai.scorer import model_graded_qa
@@ -23,5 +23,10 @@ def bomb():
         scorer=model_graded_qa(
             instructions=GRADER_INSTRUCTION_REFUSAL,
             grade_pattern=GRADE_PATTERN,
+            model="openai/o3",
         ),
     )
+
+
+if __name__ == "__main__":
+    eval(tasks=bomb, model=["openai/o3", "anthropic/claude-opus-4-20250514"], epochs=20)

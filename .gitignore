@@ -1,2 +1,5 @@
 # Inspect default logs dir
-/logs/
+logs/
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints

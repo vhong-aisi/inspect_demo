@@ -29,4 +29,4 @@ def bomb():
 
 
 if __name__ == "__main__":
-    eval(tasks=bomb, model=["openai/o3", "anthropic/claude-opus-4-20250514"], epochs=20)
+    eval(tasks=bomb, model=["openai/o3", "openai/o4-mini"], epochs=20)

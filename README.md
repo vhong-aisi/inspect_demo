@@ -68,3 +68,11 @@ jupyter notebook
 ```
 
 Then connect to http://localhost:8888 and open the `.ipynb` files
+
+## Run deep research
+
+Set Anthropic API key
+
+```
+ANTHROPIC_API_KEY=your-anthropic-api-key
+```

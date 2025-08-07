@@ -23,61 +23,34 @@ Before you start:
 
 ## Setup
 
-Create a new directory:
+Clone doomla repository:
 
 ```
-mkdir ~/doomla
-cd ~/doomla
+cd ~
+git clone https://github.com/UKGovernmentBEIS/doomla.git
 ```
 
-Setup dependencies
+Install dependencies
 
 ```
-python -m venv .venv
-source ./venv/bin/activate
+poetry install
 ```
 
-```
-pip install "inspect-ai>=0.3.86,<0.4.0" "inspect-cyber>=0.1.0,<0.2.0"
-```
+## Understand the code
 
-## Create the range
+- Read through the guide in: https://inspect.cyber.aisi.org.uk/doomla.html
+- Explore the code to confirm your understanding
+- Run the "solution" variant with 10k tokens limit
+  - (i.e., update `task.py` and then `python task.py`)
+  * Remember to set up model provider
+- View the transcript with `inspect view --log-dir ./logs`
+- Run the "example" variant with 50k tokens limit
+- View the transcript and compare with the expected solution to understand where the model failed
+  - Feel free to share results with others.
 
-Follow the instructions in: https://inspect.cyber.aisi.org.uk/doomla.html
-
-Here is the expected directory structure:
-
-```
-├── evals
-│   └── doomla
-│       ├── compose.yaml
-│       ├── eval.yaml
-│       ├── images
-│       │   ├── joomla
-│       │   │   ├── Dockerfile
-│       │   │   └── custom-entrypoint.sh
-│       │   ├── mysql-setup
-│       │   │   ├── Dockerfile
-│       │   │   └── setup-script.sh
-│       │   ├── vpn
-│       │   │   ├── Dockerfile
-│       │   │   └── authorized_keys
-│       │   └── workstation
-│       │       ├── Dockerfile
-│       │       └── root
-│       ├── resources
-│       │   └── flag.txt
-│       └── solution
-│           └── solution.sh
-├── images
-│   └── agent
-│       └── Dockerfile
-└── task.py
-```
-
-## Wrapping up
+## Extras
 
 - If you finish early, consider:
-  - add more variants with various level of hints to identify the bottleneck
+  - add more variants with different hints to see how the model performance changes
   - add extra hosts to the range
   - use model graded scorer to perform automatic transcript analysis

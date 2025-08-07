@@ -40,17 +40,25 @@ poetry install
 
 - Read through the guide in: https://inspect.cyber.aisi.org.uk/doomla.html
 - Explore the code to confirm your understanding
+  - Can you tell which part belong to Inspect / Inspect Cyber?
+  - And which is the core infra you have to build regardless of the eval
+    framework?
 - Run the "solution" variant with 10k tokens limit
   - (i.e., update `task.py` and then `python task.py`)
   * Remember to set up model provider
 - View the transcript with `inspect view --log-dir ./logs`
 - Run the "example" variant with 50k tokens limit
-- View the transcript and compare with the expected solution to understand where the model failed
-  - Feel free to share results with others.
+  - Here is an example task.py: [commit #2c8b582e](https://github.com/vhong-aisi/doomla/commit/2c8b582e)
+  - This takes a while though. So, (hopefully) I have some traces ready for ya.
+- Review the transcript and see where the model failed.
 
 ## Extras
 
-- If you finish early, consider:
-  - add more variants with different hints to see how the model performance changes
-  - add extra hosts to the range
-  - use model graded scorer to perform automatic transcript analysis
+If you have extra time, there are a few things you can do:
+
+- Check out [inspect_evals/cybench](https://github.com/UKGovernmentBEIS/inspect_evals/tree/main/src/inspect_evals/cybench) for many more examples
+- Try to solve this range yourself by using the [human agent](https://inspect.aisi.org.uk/human-agent.html)
+  - Example task.py: [commit #85c232ecf](https://github.com/vhong-aisi/doomla/commit/85c232ecf)
+  - Run `python task.py`, then use the `docker exec` command to login to the container.
+- Add more variants with different hints to see if you can nudge the model along
+- Modify the range to your liking (e.g., removing a host)

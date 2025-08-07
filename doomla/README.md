@@ -47,9 +47,9 @@ poetry install
   - (i.e., update `task.py` and then `python task.py`)
   * Remember to set up model provider
 - View the transcript with `inspect view --log-dir ./logs`
-- Run the "example" variant with 50k tokens limit
+- Run the "example" variant with 100k tokens limit
   - Here is an example task.py: [commit #2c8b582e](https://github.com/vhong-aisi/doomla/commit/2c8b582e)
-  - This takes a while though. So, (hopefully) I have some traces ready for ya.
+  - This would take a while. So, I have some traces ready at [../assets/logs_doomla/](../assets/logs_doomla/)
 - Review the transcript and see where the model failed.
 
 ## Extras

@@ -55,6 +55,10 @@ We use the python eval call, so simply run the script.
 python single_turn/bomb.py
 ```
 
+## Following Doomla tutorial (cyber range)
+
+Check out [./doomla/README.md](./doomla/README.md)
+
 ## View logs
 
 ```
